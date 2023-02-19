@@ -27,20 +27,20 @@ namespace OpenClosed
 
     public class SalaryCalculator
     {
-        private readonly List<BaseSalaryCalculator> _developerCalculation;
+        private readonly List<BaseSalaryCalculator> _calculationList;
 
-        public SalaryCalculator(List<BaseSalaryCalculator> developerCalculation)
+        public SalaryCalculator(List<BaseSalaryCalculator> calculationList)
         {
-            _developerCalculation = developerCalculation;
+            _calculationList = calculationList;
         }
 
         public double CalculateTotalSalaries()
         {
             double totalSalaries = 0D;
 
-            foreach (var devCalc in _developerCalculation)
+            foreach (var calculation in _calculationList)
             {
-                totalSalaries += devCalc.CalculateSalary();
+                totalSalaries += calculation.CalculateSalary();
             }
 
             return totalSalaries;
