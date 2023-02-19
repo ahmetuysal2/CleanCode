@@ -3,11 +3,11 @@
 
 namespace OpenClosed
 {
-    public abstract class BaseSalaryCalculatorWithOpenClosed
+    public abstract class BaseSalaryCalculator
     {
         protected  Developer developer { get; set; }
 
-        public BaseSalaryCalculatorWithOpenClosed(Developer developer)
+        public BaseSalaryCalculator(Developer developer)
         {
             this.developer = developer;
         }
@@ -16,7 +16,7 @@ namespace OpenClosed
     }
 
 
-    public class SeniorDevSalaryCalculator : BaseSalaryCalculatorWithOpenClosed
+    public class SeniorDevSalaryCalculator : BaseSalaryCalculator
     {
         public SeniorDevSalaryCalculator(Developer developer) : base(developer)
         {
@@ -24,7 +24,7 @@ namespace OpenClosed
         public override double CalculateSalary() => developer.HourlyRate * developer.WorkingHours * 1.2;
     }
 
-    public class JuniorDevSalaryCalculator : BaseSalaryCalculatorWithOpenClosed
+    public class JuniorDevSalaryCalculator : BaseSalaryCalculator
     {
         public JuniorDevSalaryCalculator(Developer developer) : base(developer)
         {

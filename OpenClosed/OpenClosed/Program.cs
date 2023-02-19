@@ -5,7 +5,7 @@ public class Program
 {
     static void Main(string[] args)
     {
-        var devCalculations = new List<BaseSalaryCalculatorWithOpenClosed>
+        var devCalculations = new List<BaseSalaryCalculator>
         {
             new SeniorDevSalaryCalculator(new Developer {Id = 1, Name = "Dev1", Level = "Senior developer", HourlyRate = 30.5, WorkingHours = 160 }),
             new JuniorDevSalaryCalculator(new Developer {Id = 2, Name = "Dev2", Level = "Junior developer", HourlyRate = 20, WorkingHours = 150 }),

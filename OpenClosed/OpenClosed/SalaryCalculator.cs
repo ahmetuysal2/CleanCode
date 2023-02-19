@@ -27,9 +27,9 @@ namespace OpenClosed
 
     public class SalaryCalculator
     {
-        private readonly IEnumerable<BaseSalaryCalculatorWithOpenClosed> _developerCalculation;
+        private readonly List<BaseSalaryCalculator> _developerCalculation;
 
-        public SalaryCalculator(IEnumerable<BaseSalaryCalculatorWithOpenClosed> developerCalculation)
+        public SalaryCalculator(List<BaseSalaryCalculator> developerCalculation)
         {
             _developerCalculation = developerCalculation;
         }
