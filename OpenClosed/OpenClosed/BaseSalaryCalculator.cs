@@ -31,4 +31,29 @@ namespace OpenClosed
         }
         public override double CalculateSalary() => developer.HourlyRate * developer.WorkingHours;
     }
+
+
+    //public class SeniorDevSalaryCalculator : BaseSalaryCalculator
+    //{
+    //    private Developer developerx;
+
+    //    public SeniorDevSalaryCalculator(Developer developerx)
+    //    {
+    //        this.developerx = developerx;
+    //    }
+
+    //    public override double CalculateSalary() => developerx.HourlyRate * developerx.WorkingHours * 1.2;
+    //}
+
+    //public class JuniorDevSalaryCalculator : BaseSalaryCalculator
+    //{
+    //    private Developer developerx;
+
+    //    public JuniorDevSalaryCalculator(Developer developerx)
+    //    {
+    //        this.developerx = developerx;
+    //    }
+
+    //    public override double CalculateSalary() => developerx.HourlyRate * developerx.WorkingHours;
+    //}
 }
